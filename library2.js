@@ -60,13 +60,13 @@ var library = {
       'album': album
     }
   },
-    addPlaylist: function (name) {
+  addPlaylist: function (name) {
 
-      var newId = uid();         //~~Ask why newId gives back string surrounded by quotes when logged when others are not
-      library.playlists[newId] = {
-        'id': newId,
-        'name': name,
-      }
+    var newId = uid();         //~~Ask why newId gives back string surrounded by quotes when logged when others are not
+    library.playlists[newId] = {
+      'id': newId,
+      'name': name,
     }
+  }
 }
 
