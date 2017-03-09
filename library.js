@@ -29,20 +29,28 @@ var library = {
 // p01: Coding Music - 2 tracks
 // p02: Other Playlist - 1 tracks
 
-var printPlaylists = function () {
+// var printPlaylists = function () {
+//   for (var pxx in library.playlists) {
+//     var libPlay = library.playlists;
+//     console.log(pxx + ": " + libPlay[pxx].name + " - " + libPlay[pxx].tracks.length + " tracks");
+//   }
 
-}
-
+// }
 
 // prints a list of all tracks, in the form:
 // t01: Code Monkey by Jonathan Coulton (Thing a Week Three)
 // t02: Model View Controller by James Dempsey (WWDC 2003)
 // t03: Four Thirty-Three by John Cage (Woodstock 1952)
 
-var printTracks = function () {
+// var printTracks = function () {
+//   for (var txx in library.tracks) {
+//     var libTracks = library.tracks;
+//     console.log(txx + ": " + libTracks[txx].name + " by " + libTracks[txx].artist + " (" + libTracks[txx].album + ")");
+//   }
 
-}
+// }
 
+// printTracks ();
 
 // prints a list of tracks for a given playlist, in the form:
 // p01: Coding Music - 2 tracks
@@ -50,10 +58,11 @@ var printTracks = function () {
 // t02: Model View Controller by James Dempsey (WWDC 2003)
 
 var printPlaylist = function (playlistId) {
-
+  var chosenPlaylist = library.playlist.playlistId;
+  console.log(chosenPlaylist + ": " + chosenPlaylist.name);
 }
 
-
+printPlaylist (p01);
 // adds an existing track to an existing playlist
 
 var addTrackToPlaylist = function (trackId, playlistId) {
@@ -86,7 +95,7 @@ var addPlaylist = function (name) {
 // STRETCH:
 // given a query string string, prints a list of tracks
 // where the name, artist or album contains the query string (case insensitive)
-// tip: use "string".search("tri") 
+// tip: use "string".search("tri")
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search
 
 var printSearchResults = function(query) {
