@@ -127,9 +127,10 @@ addTrack ('this is the name', 'this is the artist', 'this is the album');
 
 
 var addPlaylist = function (name) {
-  var newId = uid();         //~~Ask why newId gives back string surrounded by quotes when logged when others are not
+  var newId = uid();
+       //~~Ask why newId gives back string surrounded by quotes when logged when others are not
   library.playlists[newId] = {
-    id: newId,
+    'id': newId,
     'name': name,
   }
   console.log(library.playlists);
